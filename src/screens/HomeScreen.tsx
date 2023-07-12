@@ -45,10 +45,12 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
           />
         </View>
         <View style={styles.itemDetailsContainer}>
-          <Text style={styles.itemName} ellipsizeMode="tail">
-            {item.name}
-          </Text>
-          <Text style={styles.itemPrice}>{item.price}$</Text>
+          <View style={styles.detailContainer}>
+            <Text style={styles.itemName} ellipsizeMode="tail">
+              {item.name}
+            </Text>
+            <Text style={styles.itemPrice}>{item.price}$</Text>
+          </View>
           <TouchableOpacity
             onPress={() => addToCart(item)}
             style={styles.cartButton}>

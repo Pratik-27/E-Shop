@@ -19,6 +19,7 @@ export const cartStyles = StyleSheet.create({
       paddingVertical: 10,
       paddingHorizontal: 20,
       backgroundColor: 'beige', 
+      borderRadius: 5
     },
     emptyContainer: {
         alignItems: 'center',
@@ -38,6 +39,7 @@ export const cartStyles = StyleSheet.create({
       backgroundColor: 'blue',
       padding: 10,
       borderRadius: 5,
+      borderWidth: 0.5
     },
     proceedButtonText: {
       color: 'white',
@@ -46,12 +48,23 @@ export const cartStyles = StyleSheet.create({
     },
     itemContainer: {
       flexDirection: 'row',
-      paddingVertical: 5,
+      padding: 5,
+      paddingLeft: 10,
+      alignItems: 'center',
+      borderWidth: 1,
+      borderColor: '#AD5784',
+      marginVertical: 2,
+      borderTopWidth: 2,
+      borderLeftWidth: 2,
+      borderRadius: 8,
     },
     image: {
       height: 1.6*vw(30),
       width: vw(30),
-      backgroundColor: '#FFC0CB',
+      borderRadius: 8,
+      borderWidth: 0.5,
+      borderColor: '#9B4A6F',
+      backgroundColor: 'white'
     },
     itemDetailsContainer: {
       paddingHorizontal: 10,
@@ -81,13 +94,15 @@ export const cartStyles = StyleSheet.create({
       paddingVertical: 5,
       backgroundColor: 'lightgray',
       borderRadius: 5,
-      marginHorizontal: 5,
+      marginHorizontal: 10,
+      borderWidth: 0.5,
     },
     countText: {
       color: 'black', 
     },
     divider: {
-      backgroundColor: 'black',
+      // backgroundColor: 'black',
+      height: 5
     },
   });
   
